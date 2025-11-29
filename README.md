@@ -74,4 +74,41 @@ Los universos están distribuidos en la superficie de un toro parametrizado:
 
 ### **3. Rutado inteligente (BFS):**
 -El algoritmo analiza camino mínimo en número de saltos.
+
+---
+
+## ESTRUCTURAS DE DATOS
+### **Map<number, Universo>**
+
+- Soporta acceso constante O(1)
+
+- Almacena todos los universos por id
+
+### **Arreglo de adyacencias implícito**
+
+ Cada universo contiene:
+
+- connections: number[]
+
+
+Cumpliendo:
+
+- Máximo 6 salidas
+
+- Nunca conexiones inversas automáticas
+
+### **BFS (Breadth-First Search)**
+
+Utilizado para encontrar la ruta más corta válida:
+
+- O(V + E) ≈ 36 + (36 * 6)
+
+### **Sistema modular orientado a componentes**
+
+Cada archivo resuelve un problema específico (SRP).
+
+---
+
+
+
 ---
