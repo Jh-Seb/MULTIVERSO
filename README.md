@@ -62,16 +62,16 @@ MULTIVERSO/
 ---
 ## CARACTERISTICAS DEL MULTIVERSO
 
-### ** 1. Representacion 3D de una Figura Toroidal (T²):"
+### ** 1. Representacion 3D de una Figura Toroidal (T²):**
 Los universos están distribuidos en la superficie de un toro parametrizado:
-x = (R + r cos v) cos u
-y = (R + r cos v) sin u
-z = r sin v
+- x = (R + r cos v) cos u
+- y = (R + r cos v) sin u
+- z = r sin v
 ### **2. Conexiones unidireccionales con reglas estrictas:**
 - Nunca se crea la conexión inversa.
 - Siempre se respetan las 6 salidas máximas.
 - Eliminación de universos limpia todas las entradas relacionadas.
 
 ### **3. Rutado inteligente (BFS):**
-El algoritmo analiza camino mínimo en número de saltos.
+-El algoritmo analiza camino mínimo en número de saltos.
 ---
