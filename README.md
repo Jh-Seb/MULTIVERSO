@@ -19,19 +19,29 @@ El proyecto está organizado en módulos que dividen responsabilidad entre lógi
 ### 📂 **Estructura general**
 
 ```
-src/
-├── logic/
-│ ├── addUniverse.ts
-│ ├── connectUniverses.ts
-│ ├── removeUniverse.ts
-│ └── routeFinder.ts
-│ 
-├── rendering/
-│ ├── torus.ts
-│ ├── scene.ts
-│ └── controls.ts
-├── universe.ts
-├── main.ts
-├── styles.css
-└── index.html
+MULTIVERSO/
+│
+├src/
+│├── logic/
+││     ├── addUniverse.ts
+││     ├── connectUniverses.ts
+││     ├── removeUniverse.ts
+││     └── routeFinder.ts
+││ 
+│├── types/
+││    └── index.d.ts
+│├── torus.ts
+│├── controls.ts
+│├── scene.ts
+│├── universe.ts
+│├── main.ts
+│├── styles.css
+│└── ui.ts
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── README.md
+├── tsconfig.json
+└── vite.config.ts
 ```
