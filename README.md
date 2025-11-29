@@ -7,6 +7,17 @@ Renderizado con **Three.js**, animado con efectos neon y organizado con una arqu
 
 ## REGLAS 
 
+Estas reglas son **inmutables y obligatorias**, aplicadas desde la capa lógica:
+
+1️⃣ **Se puede viajar entre universos**, pero solo siguiendo conexiones existentes.  
+2️⃣ **Cada universo puede conectarse máximo con 6 universos**.  
+3️⃣ **Las conexiones son unidireccionales.**  
+&nbsp;&nbsp;&nbsp;&nbsp;Si viajas de A → B, no puedes devolver A ← B por esa misma conexión.  
+4️⃣ **El multiverso debe tener mínimo 36 universos.**  
+&nbsp;&nbsp;&nbsp;&nbsp;No se permite borrar por debajo de ese límite.  
+5️⃣ **Cada universo debe tener al menos 1 salida obligatoria.**  
+&nbsp;&nbsp;&nbsp;&nbsp;Nunca quedan nodos aislados.  
+6️⃣ **Rutas pasadas se eliminan para dejar visible solo la última ruta generada.**
 ---
 
 ## SIMULACION  
@@ -48,3 +59,5 @@ MULTIVERSO/
 ├── tsconfig.json
 └── vite.config.ts
 ```
+---
+
