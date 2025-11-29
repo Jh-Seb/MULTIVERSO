@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiverso Toroidal</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <div id="canvas-container"></div>
+
+    <div id="control-panel">
+      <h1>Multiverso Toroidal</h1>
+      <p>Arrastra para rotar | Rueda del mouse para hacer zoom</p>
+
+      <div class="control-group">
+        <button id="btn-toggle-axes">Mostrar Ejes</button>
+      </div>
+
+      <div class="control-group">
+        <input id="add-count" type="number" value="1" min="1" />
+        <button id="btn-add">Añadir Nodo(s)</button>
+      </div>
+
+      <div class="control-group">
+        <input id="remove-count" type="number" value="1" min="1" />
+        <button id="btn-remove">Eliminar Nodo(s)</button>
+      </div>
+
+      <div class="control-group">
+        <input id="input-dest" type="number" placeholder="Destino ID" />
+        <button id="btn-find-route">Buscar</button>
+      </div>
+
+      <div id="message"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
