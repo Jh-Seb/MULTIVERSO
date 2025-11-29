@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/MULTIVERSO-TOROIDAL/", // nombre EXACTO del repo
+  base: "/MULTIVERSO/", 
   server: {
     port: 5173
   }
