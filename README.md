@@ -62,7 +62,7 @@ MULTIVERSO/
 ---
 ## CARACTERISTICAS DEL MULTIVERSO
 
-### ** 1. Representacion 3D de una Figura Toroidal (T²):**
+### **1. Representacion 3D de una Figura Toroidal (T²):**
 Los universos están distribuidos en la superficie de un toro parametrizado:
 - x = (R + r cos v) cos u
 - y = (R + r cos v) sin u
@@ -106,6 +106,49 @@ Utilizado para encontrar la ruta más corta válida:
 ### **Sistema modular orientado a componentes**
 
 Cada archivo resuelve un problema específico (SRP).
+
+---
+
+## MATEMÁTICA DETRAS DEL PROYECTO
+### **1. Distribución de universos en un toro**
+
+Los universos se colocan siguiendo un mapa (u, v) uniforme sobre:
+
+- T² = S¹ × S¹
+
+
+Usando radios:
+
+- R = radio mayor (centro del toro)
+- r = radio menor (grosor del tubo)
+
+### **2. Movimientos interpolados**
+
+Durante el trazado de rutas:
+
+- P(t) = A + (B − A) * t
+
+
+donde
+- t ∈ [0,1] y A,B son vectores 3D.
+
+### **3. Coloración y energía**
+
+Cada nodo cambia color dinámicamente mediante manipulación de materiales Three.js.
+
+---
+
+## LENGUAJES Y TECNOLOGÍAS
+
+- TypeScript
+
+- Three.js
+
+- Vite
+
+- HTML5 / Canvas
+
+- CSS3 (Glassmorphism + Neon)
 
 ---
 
