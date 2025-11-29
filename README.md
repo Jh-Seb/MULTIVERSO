@@ -22,7 +22,7 @@ Estas reglas son **inmutables y obligatorias**, aplicadas desde la capa lógica:
 
 ## SIMULACION  
 
- **[Ver Simulacion](https://TU_USUARIO.github.io/TU_REPO/)**
+ **[Ver Simulacion](https://Jh-Seb.github.io/MULTIVERSO/)**
 
 ---
 
