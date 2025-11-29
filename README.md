@@ -5,18 +5,21 @@ Renderizado con **Three.js**, animado con efectos neon y organizado con una arqu
 
 ---
 
-## 📌 Demo  
-(Coloca aquí el enlace cuando lo subamos con GitHub Pages)
-
-👉 **[Ver Demo](https://TU_USUARIO.github.io/TU_REPO/)**
+## REGLAS 
 
 ---
 
-## 🏛️ Arquitectura del Proyecto
+## SIMULACION  
+
+ **[Ver Simulacion](https://TU_USUARIO.github.io/TU_REPO/)**
+
+---
+
+## ARQUITECTURA DEL PROYECTO
 
 El proyecto está organizado en módulos que dividen responsabilidad entre lógica, renderizado, geometría y reglas del multiverso.
 
-### 📂 **Estructura general**
+### **Estructura general**
 
 ```
 MULTIVERSO/
