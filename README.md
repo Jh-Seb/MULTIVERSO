@@ -5,7 +5,7 @@ Renderizado con **Three.js**, animado con efectos neon y organizado con una arqu
 
 ---
 
-## REGLAS 
+## REGLAS
 
 Estas reglas son **inmutables y obligatorias**, aplicadas desde la capa lógica:
 
