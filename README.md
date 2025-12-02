@@ -35,8 +35,8 @@ Al abrir la simulación, esta inicia automáticamente con 36 universos mínimos,
 
 ![AGREGAR/ELIMINAR](assets/1.png) _(imagen 1)_
 
--Escribe en los campos numéricos cuántos universos deseas agregar o eliminar.
--Pulsa el botón correspondiente (Añadir Nodo(s) o Eliminar Nodo(s)).
+- Escribe en los campos numéricos cuántos universos deseas agregar o eliminar.
+- Pulsa el botón correspondiente (Añadir Nodo(s) o Eliminar Nodo(s)).
 
 El sistema ajustará automáticamente las conexiones internas respetando todas las reglas del multiverso.
 Si intentas eliminar universos cuando solo existen 36, aparecerá un mensaje de error indicando que no pueden existir menos de 36 universos.
