@@ -61,7 +61,7 @@ MULTIVERSO/
 ---
 ## CARACTERISTICAS DEL MULTIVERSO
 
-### **1. Representacion 3D de una Figura Toroidal (T²):**
+### **1. Representacion 3D de una Figura Toroidal:**
 Los universos están distribuidos en la superficie de un toro parametrizado:
 - x = (R + r cos v) cos u
 - y = (R + r cos v) sin u
