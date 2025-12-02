@@ -1,7 +1,8 @@
-# 🌌 Multiverso Toroidal — Simulador Interactivo 3D
+---
+# Multiverso Toroidal
 
-Simulación 3D de un **multiverso toroidal** donde cada universo es un nodo en un espacio tridimensional, con reglas estrictas de conectividad, unidireccionalidad y exploración.  
-Renderizado con **Three.js**, animado con efectos neon y organizado con una arquitectura modular diseñada para estructuras de datos avanzadas .
+Simulación 3D de un **multiverso toroidal**, donde cada universo es representado como un nodo en un espacio tridimensional y se rige por un conjunto de reglas definidas para su correcto funcionamiento. El sistema implementa estructuras de datos personalizadas para gestionar la representación, las conexiones y el comportamiento de los universos.
+Proyecto desarrollado para la clase de Estructuras de Datos.
 
 ---
 
