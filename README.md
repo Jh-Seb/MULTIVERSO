@@ -134,6 +134,8 @@ Cada entrada del mapa contiene un objeto:
 ```
 {
   id: number
+  u: number
+  v: number
   position: THREE.Vector3
   connections: number[]
   mesh: THREE.Mesh
