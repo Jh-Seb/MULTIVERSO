@@ -19,6 +19,7 @@ Estas reglas son **inmutables y obligatorias**, aplicadas desde la capa lógica:
 5️. Cada universo debe tener al menos 1 salida obligatoria.  
 &nbsp;&nbsp;&nbsp;&nbsp;Nunca quedan nodos aislados.  
 6️. Rutas pasadas se eliminan para dejar visible solo la última ruta generada.
+
 ---
 
 ## SIMULACION  
