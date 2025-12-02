@@ -273,9 +273,9 @@ Para el multiverso, esta geometría encaja con las reglas, pues:
 ### **3. VECINDAD MATEMÁTICA RESPONSABLE**
 
 Cada universo calcula su vecindad a partir de una métrica simple:
-```
-d(a,b) = \sqrt{(x_a - x_b)^2 + (y_a - y_b)^2 + (z_a - z_b)^2}
-```
+
+![distancia](https://latex.codecogs.com/png.latex?d(a,b)%20=%20\sqrt{(x_a%20-%20x_b)^2%20+%20(y_a%20-%20y_b)^2%20+%20(z_a%20-%20z_b)^2})
+
 
 Esto nos permite elegir conexiones hacia los universos más cercanos, garantizando que:
 
@@ -288,10 +288,9 @@ La métrica genera un entramado espacial natural donde las relaciones emergen ex
 ### **4. DISTRIBUCIÓN ANGULAR DE UNIVERSOS**
 
 Para colocar los universos equitativamente:
-```
-u &= \frac{2\pi i}{N} \\
-v &= \frac{2\pi j}{N}
-```
+
+![uv](https://latex.codecogs.com/png.latex?\begin{aligned}u&=\frac{2\pi%20i}{N}\\v&=\frac{2\pi%20j}{N}\end{aligned})
+
 donde:
 * $N = \text{número total de universos}$
 * $i, j = \text{índices obtenidos de operaciones modulares}$
