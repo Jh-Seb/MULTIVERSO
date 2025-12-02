@@ -10,15 +10,12 @@ Proyecto desarrollado para la clase de Estructuras de Datos.
 
 Estas reglas son **inmutables y obligatorias**, aplicadas desde la capa lógica:
 
-1. Se puede viajar entre universos, pero solo siguiendo conexiones existente. 
-2️. Cada universo puede conectarse máximo con 6 universos.  
-3️. Las conexiones son unidireccionales. 
-&nbsp;&nbsp;&nbsp;&nbsp;Si viajas de A → B, no puedes devolver A ← B por esa misma conexión.  
-4️. El multiverso debe tener mínimo 36 universos.
-&nbsp;&nbsp;&nbsp;&nbsp;No se permite borrar por debajo de ese límite.  
-5️. Cada universo debe tener al menos 1 salida obligatoria.  
-&nbsp;&nbsp;&nbsp;&nbsp;Nunca quedan nodos aislados.  
-6️. Rutas pasadas se eliminan para dejar visible solo la última ruta generada.
+1.  Se puede viajar entre universos, pero solo siguiendo conexiones existente.
+2.  Cada universo puede conectarse máximo con 6 universos.
+3.  Las conexiones son unidireccionales. Si viajas de A → B, no puedes devolver A ← B por esa misma conexión.
+4.  El multiverso debe tener mínimo 36 universos. No se permite borrar por debajo de ese límite.
+5.  Cada universo debe tener al menos 1 salida obligatoria.  Nunca quedan nodos aislados.
+6.  Rutas pasadas se eliminan para dejar visible solo la última ruta generada.
 
 ---
 
