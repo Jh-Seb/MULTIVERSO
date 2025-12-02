@@ -297,7 +297,6 @@ Para colocar los universos equitativamente:
 donde:
 * $N = \text{número total de universos}$
 * $i, j = \text{índices obtenidos de operaciones modulares}$
-* 
 Esto produce:
 
 - Una distribución homogénea
