@@ -289,7 +289,9 @@ La métrica genera un entramado espacial natural donde las relaciones emergen ex
 
 Para colocar los universos equitativamente:
 
-![uv](https://latex.codecogs.com/png.latex?\begin{matrix}u=\frac{2\pi%20i}{N}\\v=\frac{2\pi%20j}{N}\end{matrix})
+![u](https://latex.codecogs.com/png.latex?u=\frac{2\pi%20i}{N})
+![v](https://latex.codecogs.com/png.latex?v=\frac{2\pi%20j}{N})
+
 
 donde:
 * $N = \text{número total de universos}$
