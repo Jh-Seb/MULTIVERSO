@@ -10,7 +10,7 @@ Proyecto desarrollado para la clase de Estructuras de Datos.
 
 Estas reglas son **inmutables y obligatorias**, aplicadas desde la capa lógica:
 
-1️. Se puede viajar entre universos, pero solo siguiendo conexiones existentes.  
+1. Se puede viajar entre universos, pero solo siguiendo conexiones existente. 
 2️. Cada universo puede conectarse máximo con 6 universos.  
 3️. Las conexiones son unidireccionales. 
 &nbsp;&nbsp;&nbsp;&nbsp;Si viajas de A → B, no puedes devolver A ← B por esa misma conexión.  
