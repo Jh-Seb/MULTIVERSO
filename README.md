@@ -174,6 +174,24 @@ El proceso consiste en:
 
   - Se reconstruye la ruta recorriendo los _parent[id]_ desde el final hasta el origen.
 
+Esto nos garantiza que:
+1. Encuentra la ruta mas corta
+2. Cumple con la unidireccionalidad
+3. Evita ciclos
+4. Esta optimizado para una gran cantidad de universos
+
+La complejidad de BFS en esta estructura es:
+```
+O(V + E)
+```
+Pero como cada universo tiene máximo 6 salidas, el comportamiento real es:
+```
+≈ O(n)
+```
+Donde n = número de universos existentes.
+
+Esto hace al algoritmo extremadamente rápido incluso en simulaciones 3D.
+
 ---
 
 ## MATEMÁTICA DETRAS DEL PROYECTO
