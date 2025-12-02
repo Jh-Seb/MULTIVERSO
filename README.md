@@ -25,6 +25,39 @@ Estas reglas son **inmutables y obligatorias**, aplicadas desde la capa lógica:
 
 ---
 
+## MODO DE USO
+
+El Multiverso Toroidal te permite agregar universos, eliminarlos y viajar entre ellos cumpliendo todas las reglas de conectividad y unidireccionalidad.
+Usarlo es extremadamente sencillo.
+
+Al abrir la simulación, esta inicia automáticamente con 36 universos mínimos, y nunca podrás tener menos de esa cantidad.
+### **Agregar o eliminar universos**
+
+![AGREGAR/ELIMINAR](assets/1.png) _(imagen 1)_
+-Escribe en los campos numéricos cuántos universos deseas agregar o eliminar.
+-Pulsa el botón correspondiente (Añadir Nodo(s) o Eliminar Nodo(s)).
+
+El sistema ajustará automáticamente las conexiones internas respetando todas las reglas del multiverso.
+Si intentas eliminar universos cuando solo existen 36, aparecerá un mensaje de error indicando que no pueden existir menos de 36 universos.
+
+### **Viajar entre universos**
+![BUSCAR](assets/2.png) _(imagen 2)_
+- Escribe el ID del universo destino al que quieres llegar.
+- Presiona el botón Buscar.
+
+El sistema calculará la mejor ruta posible desde el universo de origen (por defecto, el 1) hasta el destino.
+Durante la animación:
+
+- Se dibuja la ruta paso a paso.
+- Los universos se iluminan indicando el recorrido.
+- La última ruta encontrada permanece visible en pantalla.
+
+Importante:
+No puedes regresar al mismo universo por la misma salida, ya que todas las conexiones son **unidireccionales**.
+Si deseas regresar, el programa buscará otra ruta alternativa que cumpla las reglas del multiverso
+
+---
+
 ## ARQUITECTURA DEL PROYECTO
 
 El proyecto está organizado en módulos que dividen responsabilidad entre lógica, renderizado, geometría y reglas del multiverso.
