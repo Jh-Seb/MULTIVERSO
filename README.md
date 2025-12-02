@@ -135,9 +135,44 @@ Cumpliendo:
 
 ### **BFS (Breadth-First Search)**
 
-Utilizado para encontrar la ruta más corta válida:
+Para encontrar una ruta válida entre dos universos, utilizamos un algoritmo clásico de exploración por capas, conocido como **Búsqueda en Anchura (BFS)**.
+Este funciona de la siguiente manera: 
 
-- O(V + E) ≈ 36 + (36 * 6)
+Cada universo contiene un arreglo interno
+
+```
+connections: number[]
+```
+que representa sus salidas unidireccionales hacia otros universos.
+BFS explora estas salidas nivel por nivel, extendiéndose solo hacia universos accesibles y válidos.
+
+El proceso consiste en:
+
+1. Se inicia en el universo origen.
+
+2. Se guarda este universo en una cola (queue) de pendientes por explorar.
+
+3. Se tienen dos estructuras internas:
+
+  - visited → evita repetir universos ya visitados.
+
+  - parent → permite reconstruir la ruta final.
+
+4. Mientras haya elementos en la cola:
+
+  - Se toma el primer universo de la cola.
+
+  - Si es el destino → termina la búsqueda.
+
+  - Si no → se añaden a la cola todas las salidas de ese universo que:
+
+    - No hayan sido visitadas antes.
+
+    - Respeten la regla de unidireccionalidad.
+
+5. Cuando se alcanza el destino:
+
+  - Se reconstruye la ruta recorriendo los _parent[id]_ desde el final hasta el origen.
 
 ---
 
