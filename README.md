@@ -77,17 +77,50 @@ Los universos están distribuidos en la superficie de un toro parametrizado:
 ---
 
 ## ESTRUCTURAS DE DATOS
-### **Map<number, Universo>**
 
-- Soporta acceso constante O(1)
+El Multiverso Toroidal utiliza una arquitectura propia basada en **contenedores de universos** y **listas de conexiones unidireccionales**, diseñada para cumplir estrictamente con las reglas del modelo sin depender de estructuras tradicionales como grafos.
+Toda la lógica se apoya en dos pilares:
 
-- Almacena todos los universos por id
+- El contenedor global de universos
+- Las conexiones internas de cada universo, que definen hacia dónde puede viajar.
 
-### **Arreglo de adyacencias implícito**
+### CONTENEDOR GLOBAL : _Map<number, Universo>_
 
- Cada universo contiene:
+El proyecto mantiene todos los universos dentro de un:
 
-- connections: number[]
+_**Map<number, Universo>**_
+
+Esto actúa como un índice de acceso directo, ofreciendo:
+- Acceso O(1) a cualquier universo dado su ID
+- Actualización eficiente al agregar o remover universos
+- Persistencia estructurada: cada universo vive como un objeto independiente
+
+Cada entrada del mapa contiene un objeto:
+
+```
+{
+  id: number
+  position: THREE.Vector3
+  connections: number[]
+  mesh: THREE.Mesh
+}
+```
+Este diseño convierte al Map en una especie de “atlas” dimensional del multiverso, donde cada universo está perfectamente localizado y accesible.
+
+### CONEXIONES ENTRE UNIVERSOS:  _Arreglo de adyacencias implícito_
+
+Cada universo mantiene un arreglo de salidas permitidas, que representa las dimensiones a las que puede viajar.
+
+Propiedades clave del arreglo de conexiones:
+
+- Máximo 6 salidas, cumpliendo la Regla #2
+- Las salidas nunca se invierten automáticamente
+(si A → B, eso NO significa que B → A)
+- Son siempre unidireccionales, cumpliendo la Regla #3
+- Acceso y edición O(1)
+- Las conexiones se eliminan automáticamente si un universo desaparece
+
+Esto nos permite mantener rutas coherentes y evitar bucles imposibles según las reglas del multiverso.
 
 
 Cumpliendo:
@@ -96,15 +129,15 @@ Cumpliendo:
 
 - Nunca conexiones inversas automáticas
 
+---
+
+## ALGORITMO DE ENRUTAMIENTO
+
 ### **BFS (Breadth-First Search)**
 
 Utilizado para encontrar la ruta más corta válida:
 
 - O(V + E) ≈ 36 + (36 * 6)
-
-### **Sistema modular orientado a componentes**
-
-Cada archivo resuelve un problema específico (SRP).
 
 ---
 
