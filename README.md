@@ -195,32 +195,82 @@ Esto hace al algoritmo extremadamente rápido incluso en simulaciones 3D.
 ---
 
 ## MATEMÁTICA DETRAS DEL PROYECTO
-### **1. Distribución de universos en un toro**
 
-Los universos se colocan siguiendo un mapa (u, v) uniforme sobre:
+Nuestro Multiverso se basa en una representación matemática donde el espacio no es ni plano ni esférico, sino toroidal: una superficie en forma de donut.
+Este tipo de espacio tiene propiedades únicas que lo hacen ideal para un multiverso con reglas estrictas de conectividad y dirección única.
 
-- T² = S¹ × S¹
+### **1. GEOMETRIA TOROIDAL**
 
+Para ubicar cada universo en 3D, usamos la parametrización clásica del toro:
 
-Usando radios:
-
-- R = radio mayor (centro del toro)
-- r = radio menor (grosor del tubo)
-
-### **2. Movimientos interpolados**
-
-Durante el trazado de rutas:
-
-- P(t) = A + (B − A) * t
+$$
+\begin{align}
+x &= (R + r \cos v) \cos u \\
+y &= (R + r \cos v) \sin u \\
+z &= r \sin v
+\end{align}
+$$
 
 
-donde
-- t ∈ [0,1] y A,B son vectores 3D.
+Donde:
 
-### **3. Coloración y energía**
+- R → radio mayor (el que va del centro del donut al centro del “tubo”)
+- r → radio menor (radio del tubo)
+- u, v → variables angulares en [0,2π]
 
-Cada nodo cambia color dinámicamente mediante manipulación de materiales Three.js.
+### **2. CONTINUIDAD ESPACIAL TOTAL**
 
+El toro tiene una propiedad importante:
+
+  - Salir por un borde implica aparecer por el lado contrario.
+
+Esto significa que el espacio:
+
+- No tiene bordes
+- No tiene paredes
+- No tiene extremos
+
+Para el multiverso, esta geometría encaja con las reglas, pues:
+
+- Permite conexiones direccionales libres sin generar paredes o límites artificiales.
+- Facilita que cada universo tenga hasta 6 salidas hacia otros vecinos naturales del toro.
+- Evita concentraciones de nodos que rompan la estética o las distancias.
+
+### **3. VECINDAD MATEMÁTICA RESPONSABLE**
+
+Cada universo calcula su vecindad a partir de una métrica simple:
+$$
+d(a,b) = \sqrt{(x_a - x_b)^2 + (y_a - y_b)^2 + (z_a - z_b)^2}
+$$
+
+Esto nos permite elegir conexiones hacia los universos más cercanos, garantizando que:
+
+- Cada universo tenga un entorno estable.
+- Se cumpla la regla de máximo 6 conexiones salientes.
+- No se creen conexiones inversas automáticas.
+
+La métrica genera un entramado espacial natural donde las relaciones emergen exclusivamente de la geometría toroidal.
+
+### **4. DISTRIBUCIÓN ANGULAR DE UNIVERSOS**
+
+Para colocar los universos equitativamente:
+$$
+\begin{align}
+u &= \frac{2\pi i}{N} \\
+v &= \frac{2\pi j}{N}
+\end{align}
+$$
+donde:
+* $N = \text{número total de universos}$
+* $i, j = \text{índices obtenidos de operaciones modulares}$
+* 
+Esto produce:
+
+- Una distribución homogénea
+- Sin agrupaciones abruptas
+- Sin zonas “vacías” en el toro
+- Adaptabilidad cuando se crean o eliminan universos
+  
 ---
 
 ## LENGUAJES Y TECNOLOGÍAS
