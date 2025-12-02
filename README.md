@@ -277,6 +277,7 @@ Cada universo calcula su vecindad a partir de una métrica simple:
 \begin{align}
 d(a,b) = \sqrt{(x_a - x_b)^2 + (y_a - y_b)^2 + (z_a - z_b)^2}
 \end{align}
+```math
 
 Esto nos permite elegir conexiones hacia los universos más cercanos, garantizando que:
 
@@ -294,7 +295,7 @@ Para colocar los universos equitativamente:
 u &= \frac{2\pi i}{N} \\
 v &= \frac{2\pi j}{N}
 \end{align}
-
+```math
 donde:
 * $N = \text{número total de universos}$
 * $i, j = \text{índices obtenidos de operaciones modulares}$
